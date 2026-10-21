@@ -1,10 +1,10 @@
 cff-version: 1.2.0
 message: "If you use this software or the reported simulation results, please cite the article and this archived release."
 title: "Practical Identifiability of a Minimal Adaptive Learning-Gain Model for Binary Feedback: A Simulation Study"
-version: 1.0.0
-date-released: 2026-09-26
-# repository-code: "https://github.com/<owner>/<repo>"   # TODO: after creating the GitHub repository
-# doi: "10.5281/zenodo.XXXXXXX"                         # TODO: after Zenodo archives the released tag
+version: 1.0.1
+date-released: 2026-10-21
+repository-code: "https://github.com/joevazhong-arch/practical-identifiability-adaptive-learning-gain-binary-feedback"
+doi: "10.5281/zenodo.23530855"
 authors:
   - given-names: "Wei"
     family-names: "Li"

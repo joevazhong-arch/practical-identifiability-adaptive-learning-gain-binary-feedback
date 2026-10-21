@@ -9,7 +9,7 @@ This repository contains the model implementation, the simulation and analysis s
 ## Status and honesty notice (read before citing)
 
 - The code, fixed seeds, archived outputs and figures are provided in this repository.
-- The authors are **Wei Li** and **Jie Zhong** (corresponding author; jzhong@pku.edu.cn), and the license/copyright metadata now name both authors. The **public, persistent repository URL** and the **Zenodo DOI** do not yet exist; they will be created when the repository is published as a versioned release. These fields are marked `TODO` and must be completed before publication; they are not invented here.
+- The authors are **Wei Li** and **Jie Zhong** (corresponding author; jzhong@pku.edu.cn), and the license/copyright metadata name both authors. The **public, persistent repository** is at <https://github.com/joevazhong-arch/practical-identifiability-adaptive-learning-gain-binary-feedback>, and the **Zenodo archive** (concept DOI, always resolving to the latest version) is <https://doi.org/10.5281/zenodo.23530855>; the first archived release (v1.0.0) has version DOI 10.5281/zenodo.23530856.
 - **Independent clean-environment reproduction** by someone other than the script author: **not yet performed** at the time of package preparation.
 - **Author clean-environment verification: performed.** The script author ran `python reproduce.py` end-to-end in a fresh virtual environment (Python 3.13; NumPy 2.5.4, SciPy 1.18.1, Matplotlib 3.11.2). `verify_reproduction.py` reported all ten output families `PASS` (28,972 numerical values; maximum absolute difference 0 under tolerance 1e-6) and the six supplementary figures were reproduced byte-for-byte (identical SHA-256). This confirms the package regenerates the reported results; it is not the independent third-party reproduction noted above.
 
@@ -213,6 +213,7 @@ Released under the MIT License, Copyright © 2026 Wei Li and Jie Zhong; see [`LI
 
 ## Citation
 
-See [`CITATION.cff`](CITATION.cff). The repository URL and DOI fields are
-marked `TODO` and will be completed once the versioned release is published
-and archived.
+See [`CITATION.cff`](CITATION.cff). Repository:
+<https://github.com/joevazhong-arch/practical-identifiability-adaptive-learning-gain-binary-feedback>.
+Zenodo concept DOI: <https://doi.org/10.5281/zenodo.23530855>
+(v1.0.0 version DOI: 10.5281/zenodo.23530856).
