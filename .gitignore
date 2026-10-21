@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Virtual environments
+venv/
+.venv/
+.venv*/
+env/
+repro_venv/
+.venv_check/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Regenerated outputs: keep the directory and its marker, ignore contents
+regenerated/*
+!regenerated/.gitkeep
