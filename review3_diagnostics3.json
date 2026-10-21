@@ -1,0 +1,101 @@
+{
+ "seed": 0,
+ "likelihood_audit": {
+  "analysis": "correctly-specified recovery likelihood audit",
+  "generating_theta": [
+   0.5,
+   2.0,
+   0.05,
+   3.0
+  ],
+  "T": 80,
+  "R": 50,
+  "n_starts": 4,
+  "bounds_log": [
+   [
+    -6.0,
+    6.0
+   ],
+   [
+    -3.0,
+    2.5
+   ],
+   [
+    -4.0,
+    1.0
+   ],
+   [
+    -4.0,
+    4.0
+   ]
+  ],
+  "nll_true": {
+   "mean": 45.232667642706794,
+   "sd": 10.489266007343451,
+   "median": 48.72744060534663,
+   "min": 23.180443075554347,
+   "max": 58.446079770913414,
+   "se": 1.4834062246924193,
+   "ci95": [
+    42.32519144230965,
+    48.140143843103935
+   ]
+  },
+  "nll_fitted": {
+   "mean": 43.647444408443135,
+   "sd": 10.567446358576783,
+   "median": 47.421864549965605,
+   "min": 21.311792250737085,
+   "max": 55.44940590553222,
+   "se": 1.4944625959949462,
+   "ci95": [
+    40.71829772029304,
+    46.57659109659323
+   ]
+  },
+  "delta_fitted_minus_true": {
+   "mean": -1.5852232342636603,
+   "sd": 0.8603729161141537,
+   "median": -1.5127336757222523,
+   "min": -3.6846438102526022,
+   "max": -0.33746047980596927,
+   "se": 0.12167510466671252,
+   "ci95": [
+    -1.8237064394104168,
+    -1.3467400291169038
+   ]
+  },
+  "fraction_fitted_le_true": 1.0,
+  "boundary_hit_fraction": [
+   0.0,
+   1.0,
+   0.96,
+   0.48
+  ],
+  "note": "nll evaluated with the identical forward recursion and indexing as the fitted objective; delta = nll(theta_hat) - nll(theta_star); negative delta means the fitted optimum improves on the true vector."
+ },
+ "oos_paired_ci": {
+  "n_datasets": 50,
+  "diff_model_vs_empirical_freq": {
+   "mean": -0.0238,
+   "sd": 0.1099,
+   "ci95_mean": [
+    -0.0543,
+    0.0067
+   ],
+   "fraction_model_worse": 0.4,
+   "fraction_model_better": 0.6
+  },
+  "diff_model_vs_s_mu_hat": {
+   "mean": -0.1417,
+   "sd": 0.2562,
+   "ci95_mean": [
+    -0.2127,
+    -0.0707
+   ],
+   "fraction_model_worse": 0.22,
+   "fraction_model_better": 0.78
+  },
+  "note": "paired differences computed per dataset (same split rule, same generating parameters); CI is a normal-approximation 95% CI for the mean paired difference."
+ }
+}

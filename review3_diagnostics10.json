@@ -1,0 +1,470 @@
+{
+ "seed": 0,
+ "T": 80,
+ "R": 50,
+ "origins": [
+  24,
+  44,
+  64
+ ],
+ "scored_future_outcomes_per_dataset": 56,
+ "bounds_comparison": {
+  "proposed_model_bounds": {
+   "mu": [
+    -6,
+    6
+   ],
+   "log_sigma": [
+    -3,
+    2.5
+   ],
+   "log_omega": [
+    -4,
+    1
+   ],
+   "log_lambda": [
+    -4,
+    4
+   ]
+  },
+  "fixed_gain_original_bounds": {
+   "mu": [
+    -8,
+    8
+   ],
+   "log_sigma": [
+    -6,
+    6
+   ],
+   "log_omega": [
+    -8,
+    4
+   ]
+  },
+  "fixed_gain_common_bounds": {
+   "mu": [
+    -6,
+    6
+   ],
+   "log_sigma": [
+    -3,
+    2.5
+   ],
+   "log_omega": [
+    -4,
+    1
+   ]
+  },
+  "shared_parameters": [
+   "mu",
+   "sigma",
+   "omega"
+  ],
+  "fit_parity": "corrected fixed-gain fits use the same L-BFGS-B, n_starts=2 per prefix, starting draws (seed=0), likelihood (forward_kalman = proposed forward with lambda=1) and convergence tolerances; the three specs differ only in (a) the return order and (b) the bounds."
+ },
+ "row_wise_note": "The overall permutation test is the primary inferential result; row-wise p-values are descriptive, uncorrected, and not used to claim discrimination.",
+ "v15_protocol": {
+  "confusion_counts": {
+   "adaptive_filter": {
+    "adaptive_filter": 23,
+    "rw": 27,
+    "kalman_fixed": 0
+   },
+   "rw": {
+    "adaptive_filter": 3,
+    "rw": 35,
+    "kalman_fixed": 12
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 28,
+    "rw": 22,
+    "kalman_fixed": 0
+   }
+  },
+  "confusion_row_proportion": {
+   "adaptive_filter": {
+    "adaptive_filter": 0.46,
+    "rw": 0.54,
+    "kalman_fixed": 0.0
+   },
+   "rw": {
+    "adaptive_filter": 0.06,
+    "rw": 0.7,
+    "kalman_fixed": 0.24
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 0.56,
+    "rw": 0.44,
+    "kalman_fixed": 0.0
+   }
+  },
+  "accuracy_by_true_model": {
+   "adaptive_filter": 0.46,
+   "rw": 0.7,
+   "kalman_fixed": 0.0
+  },
+  "overall_k": 58,
+  "overall_n": 150,
+  "overall_accuracy": 0.3867,
+  "overall_wilson95": [
+   0.3125,
+   0.4665
+  ],
+  "row_wilson95": {
+   "adaptive_filter": [
+    0.3297,
+    0.596
+   ],
+   "rw": [
+    0.5625,
+    0.809
+   ],
+   "kalman_fixed": [
+    0.0,
+    0.0714
+   ]
+  },
+  "chance": 0.333,
+  "marginal_predicted_winner_counts": {
+   "adaptive_filter": 54,
+   "rw": 84,
+   "kalman_fixed": 12
+  },
+  "marginal_predicted_winner_fraction": {
+   "adaptive_filter": 0.36,
+   "rw": 0.56,
+   "kalman_fixed": 0.08
+  },
+  "observed_row_correct": {
+   "adaptive_filter": 23,
+   "rw": 35,
+   "kalman_fixed": 0
+  },
+  "null_per_row_expected_rate": {
+   "adaptive_filter": 0.36,
+   "rw": 0.56,
+   "kalman_fixed": 0.08
+  },
+  "null_per_row_expected_count": {
+   "adaptive_filter": 18.0,
+   "rw": 28.0,
+   "kalman_fixed": 4.0
+  },
+  "n_permutations": 50000,
+  "permutation_seed": 20241018,
+  "null_overall_mean": 0.3335,
+  "null_overall_sd": 0.035,
+  "null_overall_quantiles": {
+   "p2": 0.2667,
+   "p5": 0.2733,
+   "p50": 0.3333,
+   "p95": 0.3933,
+   "p97": 0.4
+  },
+  "permutation_p_overall": 0.079,
+  "permutation_p_per_row": {
+   "adaptive_filter": 0.054,
+   "rw": 0.0115,
+   "kalman_fixed": 1.0
+  },
+  "null_per_row_quantiles": {
+   "adaptive_filter": {
+    "p2": 0.26,
+    "p50": 0.36,
+    "p97": 0.46
+   },
+   "rw": {
+    "p2": 0.44,
+    "p50": 0.56,
+    "p97": 0.68
+   },
+   "kalman_fixed": {
+    "p2": 0.02,
+    "p50": 0.08,
+    "p97": 0.14
+   }
+  }
+ },
+ "corrected_original_bounds": {
+  "confusion_counts": {
+   "adaptive_filter": {
+    "adaptive_filter": 11,
+    "rw": 26,
+    "kalman_fixed": 13
+   },
+   "rw": {
+    "adaptive_filter": 1,
+    "rw": 44,
+    "kalman_fixed": 5
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 16,
+    "rw": 22,
+    "kalman_fixed": 12
+   }
+  },
+  "confusion_row_proportion": {
+   "adaptive_filter": {
+    "adaptive_filter": 0.22,
+    "rw": 0.52,
+    "kalman_fixed": 0.26
+   },
+   "rw": {
+    "adaptive_filter": 0.02,
+    "rw": 0.88,
+    "kalman_fixed": 0.1
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 0.32,
+    "rw": 0.44,
+    "kalman_fixed": 0.24
+   }
+  },
+  "accuracy_by_true_model": {
+   "adaptive_filter": 0.22,
+   "rw": 0.88,
+   "kalman_fixed": 0.24
+  },
+  "overall_k": 67,
+  "overall_n": 150,
+  "overall_accuracy": 0.4467,
+  "overall_wilson95": [
+   0.3694,
+   0.5266
+  ],
+  "row_wilson95": {
+   "adaptive_filter": [
+    0.1275,
+    0.3524
+   ],
+   "rw": [
+    0.7619,
+    0.9438
+   ],
+   "kalman_fixed": [
+    0.143,
+    0.3741
+   ]
+  },
+  "chance": 0.333,
+  "marginal_predicted_winner_counts": {
+   "adaptive_filter": 28,
+   "rw": 92,
+   "kalman_fixed": 30
+  },
+  "marginal_predicted_winner_fraction": {
+   "adaptive_filter": 0.187,
+   "rw": 0.613,
+   "kalman_fixed": 0.2
+  },
+  "observed_row_correct": {
+   "adaptive_filter": 11,
+   "rw": 44,
+   "kalman_fixed": 12
+  },
+  "null_per_row_expected_rate": {
+   "adaptive_filter": 0.187,
+   "rw": 0.613,
+   "kalman_fixed": 0.2
+  },
+  "null_per_row_expected_count": {
+   "adaptive_filter": 9.33,
+   "rw": 30.67,
+   "kalman_fixed": 10.0
+  },
+  "n_permutations": 50000,
+  "permutation_seed": 20241018,
+  "null_overall_mean": 0.3334,
+  "null_overall_sd": 0.0351,
+  "null_overall_quantiles": {
+   "p2": 0.2667,
+   "p5": 0.2733,
+   "p50": 0.3333,
+   "p95": 0.3933,
+   "p97": 0.4067
+  },
+  "permutation_p_overall": 0.0011,
+  "permutation_p_per_row": {
+   "adaptive_filter": 0.3006,
+   "rw": 0.0,
+   "kalman_fixed": 0.2551
+  },
+  "null_per_row_quantiles": {
+   "adaptive_filter": {
+    "p2": 0.1,
+    "p50": 0.18,
+    "p97": 0.28
+   },
+   "rw": {
+    "p2": 0.5,
+    "p50": 0.62,
+    "p97": 0.72
+   },
+   "kalman_fixed": {
+    "p2": 0.12,
+    "p50": 0.2,
+    "p97": 0.3
+   }
+  }
+ },
+ "corrected_common_bounds": {
+  "confusion_counts": {
+   "adaptive_filter": {
+    "adaptive_filter": 9,
+    "rw": 18,
+    "kalman_fixed": 23
+   },
+   "rw": {
+    "adaptive_filter": 2,
+    "rw": 45,
+    "kalman_fixed": 3
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 15,
+    "rw": 17,
+    "kalman_fixed": 18
+   }
+  },
+  "confusion_row_proportion": {
+   "adaptive_filter": {
+    "adaptive_filter": 0.18,
+    "rw": 0.36,
+    "kalman_fixed": 0.46
+   },
+   "rw": {
+    "adaptive_filter": 0.04,
+    "rw": 0.9,
+    "kalman_fixed": 0.06
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 0.3,
+    "rw": 0.34,
+    "kalman_fixed": 0.36
+   }
+  },
+  "accuracy_by_true_model": {
+   "adaptive_filter": 0.18,
+   "rw": 0.9,
+   "kalman_fixed": 0.36
+  },
+  "overall_k": 72,
+  "overall_n": 150,
+  "overall_accuracy": 0.48,
+  "overall_wilson95": [
+   0.4015,
+   0.5594
+  ],
+  "row_wilson95": {
+   "adaptive_filter": [
+    0.0977,
+    0.308
+   ],
+   "rw": [
+    0.7864,
+    0.9565
+   ],
+   "kalman_fixed": [
+    0.2414,
+    0.4986
+   ]
+  },
+  "chance": 0.333,
+  "marginal_predicted_winner_counts": {
+   "adaptive_filter": 26,
+   "rw": 80,
+   "kalman_fixed": 44
+  },
+  "marginal_predicted_winner_fraction": {
+   "adaptive_filter": 0.173,
+   "rw": 0.533,
+   "kalman_fixed": 0.293
+  },
+  "observed_row_correct": {
+   "adaptive_filter": 9,
+   "rw": 45,
+   "kalman_fixed": 18
+  },
+  "null_per_row_expected_rate": {
+   "adaptive_filter": 0.173,
+   "rw": 0.533,
+   "kalman_fixed": 0.293
+  },
+  "null_per_row_expected_count": {
+   "adaptive_filter": 8.67,
+   "rw": 26.67,
+   "kalman_fixed": 14.67
+  },
+  "n_permutations": 50000,
+  "permutation_seed": 20241018,
+  "null_overall_mean": 0.3334,
+  "null_overall_sd": 0.0366,
+  "null_overall_quantiles": {
+   "p2": 0.26,
+   "p5": 0.2733,
+   "p50": 0.3333,
+   "p95": 0.3933,
+   "p97": 0.4067
+  },
+  "permutation_p_overall": 0.0001,
+  "permutation_p_per_row": {
+   "adaptive_filter": 0.5267,
+   "rw": 0.0,
+   "kalman_fixed": 0.14
+  },
+  "null_per_row_quantiles": {
+   "adaptive_filter": {
+    "p2": 0.1,
+    "p50": 0.18,
+    "p97": 0.26
+   },
+   "rw": {
+    "p2": 0.42,
+    "p50": 0.54,
+    "p97": 0.64
+   },
+   "kalman_fixed": {
+    "p2": 0.2,
+    "p50": 0.3,
+    "p97": 0.4
+   }
+  }
+ },
+ "comparison": {
+  "matches_archived_v15": true,
+  "overall_k_chain": {
+   "v15_protocol": 58,
+   "corrected_original_bounds": 67,
+   "corrected_common_bounds": 72
+  },
+  "overall_accuracy_chain": {
+   "v15_protocol": 0.3867,
+   "corrected_original_bounds": 0.4467,
+   "corrected_common_bounds": 0.48
+  },
+  "permutation_p_overall_chain": {
+   "v15_protocol": 0.079,
+   "corrected_original_bounds": 0.0011,
+   "corrected_common_bounds": 0.0001
+  },
+  "fixed_gain_row_correct_chain": {
+   "v15_protocol": 0,
+   "corrected_original_bounds": 12,
+   "corrected_common_bounds": 18
+  },
+  "fixed_gain_winner_count_chain": {
+   "v15_protocol": 12,
+   "corrected_original_bounds": 30,
+   "corrected_common_bounds": 44
+  },
+  "datasets_winner_changed_v15_to_corrected": 38,
+  "datasets_winner_changed_wide_to_common": 26,
+  "corrected_wide_fixed_gain_fits_outside_common_bounds": {
+   "mu": 30,
+   "sigma": 435,
+   "omega": 328,
+   "any": 450
+  },
+  "fixed_gain_prefix_fits_total": 450,
+  "conclusion": "Separates the return-order correction (58->corrected) from the bound effect (corrected wide->common)."
+ }
+}

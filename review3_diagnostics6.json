@@ -1,0 +1,317 @@
+{
+ "seed": 0,
+ "R": 50,
+ "T": 120,
+ "train": 72,
+ "generating_theta": [
+  0.5,
+  2.0,
+  0.05,
+  3.0
+ ],
+ "model_logloss": {
+  "mean": 0.5198,
+  "sd": 0.2016
+ },
+ "empirical_freq_logloss": {
+  "mean": 0.5436,
+  "sd": 0.2083
+ },
+ "s_mu_hat_logloss": {
+  "mean": 0.6614,
+  "sd": 0.2858
+ },
+ "diff_model_vs_empirical_freq": {
+  "mean": -0.0238,
+  "sd": 0.111,
+  "p25": -0.0058,
+  "p75": 0.0097,
+  "normal_ci95": [
+   -0.0546,
+   0.007
+  ],
+  "bootstrap_ci95": [
+   -0.0581,
+   0.0027
+  ],
+  "fraction_model_better": 0.6,
+  "fraction_model_worse": 0.4,
+  "n": 50
+ },
+ "diff_model_vs_s_mu_hat": {
+  "mean": -0.1417,
+  "sd": 0.2588,
+  "p25": -0.2253,
+  "p75": -0.0001,
+  "normal_ci95": [
+   -0.2134,
+   -0.0699
+  ],
+  "bootstrap_ci95": [
+   -0.2208,
+   -0.0782
+  ],
+  "fraction_model_better": 0.78,
+  "fraction_model_worse": 0.22,
+  "n": 50
+ },
+ "empirical_freq_construction": {
+  "q": "training-set mean of binary outcomes, used as a CONSTANT predictor on held-out trials",
+  "extreme_frequency_handling": "raw training MLE clamped to [1e-6, 1-1e-6] for numerical safety (not Laplace / Bayesian shrinkage)",
+  "q_min_raw": 0.1667,
+  "q_max_raw": 0.9167,
+  "n_extreme_clamped": 0
+ },
+ "per_dataset_rows": [
+  {
+   "ll_model": 0.7390924397289554,
+   "ll_s_mu_hat": 0.6973090014410266,
+   "ll_empirical_freq": 0.7184690469693228
+  },
+  {
+   "ll_model": 0.9599548640773584,
+   "ll_s_mu_hat": 0.9688047143451444,
+   "ll_empirical_freq": 0.967847175920317
+  },
+  {
+   "ll_model": 0.4862327401634447,
+   "ll_s_mu_hat": 0.48614181893628183,
+   "ll_empirical_freq": 0.4862074848737876
+  },
+  {
+   "ll_model": 0.14862080093908864,
+   "ll_s_mu_hat": 0.1487122745611338,
+   "ll_empirical_freq": 0.14870545580459157
+  },
+  {
+   "ll_model": 0.5308446620055812,
+   "ll_s_mu_hat": 0.5325269650988891,
+   "ll_empirical_freq": 0.5317304801129731
+  },
+  {
+   "ll_model": 0.6984377422296234,
+   "ll_s_mu_hat": 1.0427131875837279,
+   "ll_empirical_freq": 0.6831137848577091
+  },
+  {
+   "ll_model": 0.7190441243975148,
+   "ll_s_mu_hat": 0.7131449376713128,
+   "ll_empirical_freq": 0.6761143206306605
+  },
+  {
+   "ll_model": 0.560527774874014,
+   "ll_s_mu_hat": 0.958980810750378,
+   "ll_empirical_freq": 0.5117400734174092
+  },
+  {
+   "ll_model": 0.37941481119102766,
+   "ll_s_mu_hat": 0.4829231513587331,
+   "ll_empirical_freq": 0.33441188254128523
+  },
+  {
+   "ll_model": 0.46164624902496687,
+   "ll_s_mu_hat": 0.8038213751838317,
+   "ll_empirical_freq": 0.48368377618118624
+  },
+  {
+   "ll_model": 0.2687578618193169,
+   "ll_s_mu_hat": 0.7279881671714238,
+   "ll_empirical_freq": 0.8684588990909581
+  },
+  {
+   "ll_model": 0.2910918130766851,
+   "ll_s_mu_hat": 0.29108060149286713,
+   "ll_empirical_freq": 0.2910698307963698
+  },
+  {
+   "ll_model": 0.7293250253192441,
+   "ll_s_mu_hat": 0.7295849947423328,
+   "ll_empirical_freq": 0.7288308247471657
+  },
+  {
+   "ll_model": 0.7441403742732234,
+   "ll_s_mu_hat": 0.7457500466700272,
+   "ll_empirical_freq": 0.7467008421189806
+  },
+  {
+   "ll_model": 0.7081142368234822,
+   "ll_s_mu_hat": 0.7132741019239311,
+   "ll_empirical_freq": 0.7120564156675065
+  },
+  {
+   "ll_model": 0.5075846317802968,
+   "ll_s_mu_hat": 0.6785780135055218,
+   "ll_empirical_freq": 0.6714654966449478
+  },
+  {
+   "ll_model": 0.5289929549147199,
+   "ll_s_mu_hat": 0.5309038800428851,
+   "ll_empirical_freq": 0.5312291810534872
+  },
+  {
+   "ll_model": 0.09105342807802892,
+   "ll_s_mu_hat": 0.19866505704473045,
+   "ll_empirical_freq": 0.1177830356563835
+  },
+  {
+   "ll_model": 0.6001635582338539,
+   "ll_s_mu_hat": 0.5785943382586796,
+   "ll_empirical_freq": 0.8108942176028092
+  },
+  {
+   "ll_model": 0.708125526764808,
+   "ll_s_mu_hat": 0.6935039534957165,
+   "ll_empirical_freq": 0.7684573964286697
+  },
+  {
+   "ll_model": 0.18686761676670827,
+   "ll_s_mu_hat": 0.18688350908991425,
+   "ll_empirical_freq": 0.1869236800228952
+  },
+  {
+   "ll_model": 0.5897852846864378,
+   "ll_s_mu_hat": 0.74848485617261,
+   "ll_empirical_freq": 0.5414655029273188
+  },
+  {
+   "ll_model": 0.3724255811655099,
+   "ll_s_mu_hat": 0.37266524310225485,
+   "ll_empirical_freq": 0.3726774622994573
+  },
+  {
+   "ll_model": 0.6685348958662173,
+   "ll_s_mu_hat": 0.806688812555778,
+   "ll_empirical_freq": 0.6931471805599453
+  },
+  {
+   "ll_model": 0.23031459593347123,
+   "ll_s_mu_hat": 1.6291882022004114,
+   "ll_empirical_freq": 0.21585151330299834
+  },
+  {
+   "ll_model": 0.4156704674213356,
+   "ll_s_mu_hat": 0.4156099906954073,
+   "ll_empirical_freq": 0.4156016327515895
+  },
+  {
+   "ll_model": 0.6943159535762414,
+   "ll_s_mu_hat": 0.9501242896212195,
+   "ll_empirical_freq": 0.6385610926059581
+  },
+  {
+   "ll_model": 0.6947385133573297,
+   "ll_s_mu_hat": 0.695701965800502,
+   "ll_empirical_freq": 0.6960054676049084
+  },
+  {
+   "ll_model": 0.6673313445651377,
+   "ll_s_mu_hat": 0.668903605826745,
+   "ll_empirical_freq": 0.6692035687986887
+  },
+  {
+   "ll_model": 0.7579828364772135,
+   "ll_s_mu_hat": 1.3460843376796927,
+   "ll_empirical_freq": 0.6161047216250485
+  },
+  {
+   "ll_model": 0.5166492831835031,
+   "ll_s_mu_hat": 0.5165755857351209,
+   "ll_empirical_freq": 0.5165596325909704
+  },
+  {
+   "ll_model": 0.53856703521812,
+   "ll_s_mu_hat": 0.538423126147301,
+   "ll_empirical_freq": 0.5384020640531428
+  },
+  {
+   "ll_model": 0.8956088716838057,
+   "ll_s_mu_hat": 0.9017992431238012,
+   "ll_empirical_freq": 0.8999723499373901
+  },
+  {
+   "ll_model": 0.0869675070224809,
+   "ll_s_mu_hat": 0.08705442993649831,
+   "ll_empirical_freq": 0.08701137698962981
+  },
+  {
+   "ll_model": 0.6781532817539251,
+   "ll_s_mu_hat": 0.6677170393327412,
+   "ll_empirical_freq": 0.6653953008181439
+  },
+  {
+   "ll_model": 0.48642464434643257,
+   "ll_s_mu_hat": 0.48631595105071296,
+   "ll_empirical_freq": 0.4862074848737876
+  },
+  {
+   "ll_model": 0.38816159693650043,
+   "ll_s_mu_hat": 0.3882175761810503,
+   "ll_empirical_freq": 0.3882021859158587
+  },
+  {
+   "ll_model": 0.28857811626878843,
+   "ll_s_mu_hat": 0.6024021970436294,
+   "ll_empirical_freq": 0.2892398956286861
+  },
+  {
+   "ll_model": 0.403868496658051,
+   "ll_s_mu_hat": 0.504490635275984,
+   "ll_empirical_freq": 0.3442275247776337
+  },
+  {
+   "ll_model": 0.6136718211792046,
+   "ll_s_mu_hat": 0.614371782119444,
+   "ll_empirical_freq": 0.6148891227782054
+  },
+  {
+   "ll_model": 0.5470170447156175,
+   "ll_s_mu_hat": 0.996311384160594,
+   "ll_empirical_freq": 0.4916347262305349
+  },
+  {
+   "ll_model": 0.627663726716512,
+   "ll_s_mu_hat": 0.6317865493620338,
+   "ll_empirical_freq": 0.6339862334693046
+  },
+  {
+   "ll_model": 0.26357619262111753,
+   "ll_s_mu_hat": 0.507016371844283,
+   "ll_empirical_freq": 0.3818114527501006
+  },
+  {
+   "ll_model": 0.3752398669621922,
+   "ll_s_mu_hat": 0.6447210116078603,
+   "ll_empirical_freq": 0.3164413828301296
+  },
+  {
+   "ll_model": 0.4715324010689573,
+   "ll_s_mu_hat": 0.5876350835264262,
+   "ll_empirical_freq": 0.6931471805599453
+  },
+  {
+   "ll_model": 0.575833934358409,
+   "ll_s_mu_hat": 0.5774550293319113,
+   "ll_empirical_freq": 0.5772236957996172
+  },
+  {
+   "ll_model": 0.30494067847778106,
+   "ll_s_mu_hat": 0.7263366102445438,
+   "ll_empirical_freq": 0.33467191521389933
+  },
+  {
+   "ll_model": 0.6230716332665268,
+   "ll_s_mu_hat": 0.6235992051276565,
+   "ll_empirical_freq": 0.6231145598879904
+  },
+  {
+   "ll_model": 0.7090102267307928,
+   "ll_s_mu_hat": 0.7102625942250742,
+   "ll_empirical_freq": 0.70962787422468
+  },
+  {
+   "ll_model": 0.4546794414561009,
+   "ll_s_mu_hat": 1.2154509158253755,
+   "ll_empirical_freq": 0.752316210105714
+  }
+ ]
+}

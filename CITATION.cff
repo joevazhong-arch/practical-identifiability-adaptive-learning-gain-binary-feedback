@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software or the reported simulation results, please cite the article and this archived release."
+title: "Practical Identifiability of a Minimal Adaptive Learning-Gain Model for Binary Feedback: A Simulation Study"
+version: 1.0.0
+date-released: 2026-09-26
+# repository-code: "https://github.com/<owner>/<repo>"   # TODO: after creating the GitHub repository
+# doi: "10.5281/zenodo.XXXXXXX"                         # TODO: after Zenodo archives the released tag
+authors:
+  - given-names: "Wei"
+    family-names: "Li"
+    affiliation:
+      "Department of Psychiatry, Shanxi Bethune Hospital, Shanxi Academy of Medical Sciences, Third Hospital of Shanxi Medical University, Tongji Shanxi Hospital, Taiyuan 030032, China"
+  - given-names: "Jie"
+    family-names: "Zhong"
+    affiliation:
+      "School of Psychological and Cognitive Sciences, Peking University, Beijing 100871, China"
+    email: "jzhong@pku.edu.cn"
+contact:
+  - given-names: "Jie"
+    family-names: "Zhong"
+    affiliation:
+      "School of Psychological and Cognitive Sciences, Peking University, Beijing 100871, China"
+    email: "jzhong@pku.edu.cn"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Practical Identifiability of a Minimal Adaptive Learning-Gain Model for Binary Feedback: A Simulation Study"
+  authors:
+    - given-names: "Wei"
+      family-names: "Li"
+      affiliation:
+        "Department of Psychiatry, Shanxi Bethune Hospital, Shanxi Academy of Medical Sciences, Third Hospital of Shanxi Medical University, Tongji Shanxi Hospital, Taiyuan 030032, China"
+    - given-names: "Jie"
+      family-names: "Zhong"
+      affiliation:
+        "School of Psychological and Cognitive Sciences, Peking University, Beijing 100871, China"
+      email: "jzhong@pku.edu.cn"
+  year: 2026
+  # doi: "10.XXXX/XXXXX"     # TODO: article DOI, once assigned

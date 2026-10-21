@@ -1,0 +1,15 @@
+# Optional Conda environment (the documented path uses a plain venv + pip).
+# Usage:
+#   conda env create -f environment.yml
+#   conda activate adaptive-learning-gain
+#   pip install -r requirements-lock.txt
+#   python reproduce.py
+name: adaptive-learning-gain
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy
+  - scipy
+  - matplotlib
+  - pip

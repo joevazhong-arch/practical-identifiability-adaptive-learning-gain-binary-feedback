@@ -1,0 +1,7 @@
+# Core runtime dependencies (Python 3.10+).
+# Pinned to the versions used in the documented clean-environment run.
+# For the complete transitive snapshot (including all sub-dependencies),
+# install requirements-lock.txt instead.
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2

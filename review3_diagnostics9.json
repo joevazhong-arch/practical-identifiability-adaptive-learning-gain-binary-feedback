@@ -1,0 +1,302 @@
+{
+ "seed": 0,
+ "T": 80,
+ "forecast_window_audit": {
+  "T": 80,
+  "origins_python_0based_cut": [
+   24,
+   44,
+   64
+  ],
+  "windows": [
+   {
+    "fit_obs_1based": [
+     1,
+     24
+    ],
+    "forecast_obs_1based": [
+     25,
+     44
+    ],
+    "python_0based_fit_slice": [
+     0,
+     23
+    ],
+    "python_0based_score_range": [
+     24,
+     43
+    ],
+    "n_fit": 24,
+    "n_forecast": 20
+   },
+   {
+    "fit_obs_1based": [
+     1,
+     44
+    ],
+    "forecast_obs_1based": [
+     45,
+     64
+    ],
+    "python_0based_fit_slice": [
+     0,
+     43
+    ],
+    "python_0based_score_range": [
+     44,
+     63
+    ],
+    "n_fit": 44,
+    "n_forecast": 20
+   },
+   {
+    "fit_obs_1based": [
+     1,
+     64
+    ],
+    "forecast_obs_1based": [
+     65,
+     80
+    ],
+    "python_0based_fit_slice": [
+     0,
+     63
+    ],
+    "python_0based_score_range": [
+     64,
+     79
+    ],
+    "n_fit": 64,
+    "n_forecast": 16
+   }
+  ],
+  "total_scored_future_outcomes": 56,
+  "n_distinct_scored": 56,
+  "within_block_fit_score_disjoint": true,
+  "each_future_scored_once": true,
+  "cross_origin_reuse": "trials scored at an earlier origin enter LATER fit prefixes (standard rolling-origin); a trial is never used to fit the SAME block in which it is scored",
+  "last_trial_y80_scored": true,
+  "note": "fit uses y[:cut] (python 0-based) = y_1..y_cut; scoring uses range(cut,end) = y_{cut+1}..y_end. Within each origin the fit prefix and scored block are disjoint. The 0-based scored index labels 24-43/44-63/64-79 correspond to 1-based held-out trials y25-y44/y45-y64/y65-y80, which never overlap their own fit prefixes y1-y24/y1-y44/y1-y64."
+ },
+ "executed_protocol_trace_first_dataset": [
+  {
+   "model": "adaptive_filter",
+   "fit_observations_1based": [
+    1,
+    24
+   ],
+   "scored_observations_1based": [
+    25,
+    44
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "rw",
+   "fit_observations_1based": [
+    1,
+    24
+   ],
+   "scored_observations_1based": [
+    25,
+    44
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "kalman_fixed",
+   "fit_observations_1based": [
+    1,
+    24
+   ],
+   "scored_observations_1based": [
+    25,
+    44
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "adaptive_filter",
+   "fit_observations_1based": [
+    1,
+    44
+   ],
+   "scored_observations_1based": [
+    45,
+    64
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "rw",
+   "fit_observations_1based": [
+    1,
+    44
+   ],
+   "scored_observations_1based": [
+    45,
+    64
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "kalman_fixed",
+   "fit_observations_1based": [
+    1,
+    44
+   ],
+   "scored_observations_1based": [
+    45,
+    64
+   ],
+   "n_scored": 20
+  },
+  {
+   "model": "adaptive_filter",
+   "fit_observations_1based": [
+    1,
+    64
+   ],
+   "scored_observations_1based": [
+    65,
+    80
+   ],
+   "n_scored": 16
+  },
+  {
+   "model": "rw",
+   "fit_observations_1based": [
+    1,
+    64
+   ],
+   "scored_observations_1based": [
+    65,
+    80
+   ],
+   "n_scored": 16
+  },
+  {
+   "model": "kalman_fixed",
+   "fit_observations_1based": [
+    1,
+    64
+   ],
+   "scored_observations_1based": [
+    65,
+    80
+   ],
+   "n_scored": 16
+  }
+ ],
+ "causality_no_lookahead": {
+  "tests": {
+   "adaptive_filter": {
+    "flipped_index_0based": 30,
+    "flipped_trial_1based": 31,
+    "p_t_unchanged_by_y_t": true,
+    "all_p_upto_t_unchanged": true,
+    "p_tplus1_changes": true
+   },
+   "rw": {
+    "flipped_index_0based": 30,
+    "flipped_trial_1based": 31,
+    "p_t_unchanged_by_y_t": true,
+    "all_p_upto_t_unchanged": true,
+    "p_tplus1_changes": true
+   },
+   "kalman_fixed": {
+    "flipped_index_0based": 30,
+    "flipped_trial_1based": 31,
+    "p_t_unchanged_by_y_t": true,
+    "all_p_upto_t_unchanged": true,
+    "p_tplus1_changes": true
+   }
+  },
+  "pass": true,
+  "note": "Flipping the scored observation y_t leaves the predictive probability p_t (and all earlier p) unchanged for every candidate, while only p_{t+1} changes; hence the scored outcome is genuinely out-of-sample for its own prediction. Block parameters are fixed from the prefix fit; latent states are propagated online with already-observed trials only (sequential one-step-ahead)."
+ },
+ "permutation_null_block": {
+  "n_permutations": 50000,
+  "seed": 20241018,
+  "reproduced_confusion_counts": {
+   "adaptive_filter": {
+    "adaptive_filter": 23,
+    "rw": 27,
+    "kalman_fixed": 0
+   },
+   "rw": {
+    "adaptive_filter": 3,
+    "rw": 35,
+    "kalman_fixed": 12
+   },
+   "kalman_fixed": {
+    "adaptive_filter": 28,
+    "rw": 22,
+    "kalman_fixed": 0
+   }
+  },
+  "reproduced_overall_k": 58,
+  "reproduced_overall_n": 150,
+  "reproduced_overall_accuracy": 0.3867,
+  "matches_archived_block": true,
+  "marginal_predicted_winner_counts": {
+   "adaptive_filter": 54,
+   "rw": 84,
+   "kalman_fixed": 12
+  },
+  "marginal_predicted_winner_fraction": {
+   "adaptive_filter": 0.36,
+   "rw": 0.56,
+   "kalman_fixed": 0.08
+  },
+  "observed_row_correct": {
+   "adaptive_filter": 23,
+   "rw": 35,
+   "kalman_fixed": 0
+  },
+  "null_per_row_expected_rate": {
+   "adaptive_filter": 0.36,
+   "rw": 0.56,
+   "kalman_fixed": 0.08
+  },
+  "null_per_row_expected_count": {
+   "adaptive_filter": 18.0,
+   "rw": 28.0,
+   "kalman_fixed": 4.0
+  },
+  "observed_overall_accuracy": 0.3867,
+  "null_overall_mean": 0.3335,
+  "null_overall_sd": 0.035,
+  "null_overall_quantiles": {
+   "p2": 0.2667,
+   "p5": 0.2733,
+   "p50": 0.3333,
+   "p95": 0.3933,
+   "p97": 0.4
+  },
+  "permutation_p_overall": 0.079,
+  "permutation_p_per_row": {
+   "adaptive_filter": 0.054,
+   "rw": 0.0115,
+   "kalman_fixed": 1.0
+  },
+  "null_per_row_quantiles": {
+   "adaptive_filter": {
+    "p2": 0.26,
+    "p50": 0.36,
+    "p97": 0.46
+   },
+   "rw": {
+    "p2": 0.44,
+    "p50": 0.56,
+    "p97": 0.68
+   },
+   "kalman_fixed": {
+    "p2": 0.02,
+    "p50": 0.08,
+    "p97": 0.14
+   }
+  },
+  "note": "Reference distribution preserves the observed asymmetric winner marginals (fixed-gain never selected, RW selected most) and only severs the generator-winner association; a non-significant p means the observed diagonal matches this biased selection procedure with no evidence of genuine discrimination. With balanced generators the overall null mean is 1/3, but the per-row null rates differ (the nested fixed-gain row has a null rate of 0)."
+ }
+}
